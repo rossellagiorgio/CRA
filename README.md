@@ -25,5 +25,6 @@ Download `loan.csv` from Kaggle, place it in the project root, then open the not
 ## Results 
 
 For these classification models, we focus on recall, F1-score, and AUC-ROC (rather than accuracy alone) for the default class, since the dataset is imbalanced and accuracy can be misleading. 
+
 Logistic Regression and Gradient Boosting perform nearly identically across every metric (f1-score around 0.40, recall 64-67%, AUC around 0.70), trading lower overall accuracy (64%) for much better detection of defaulters. KNN reaches higher accuracy (77%) but misses around 83% of true defaulters (recall 0.17, f1-score 0.21) and has an AUC of only 0.58, that is, barely above random guessing. The output is reasonable, since KNN, unlike the other two models, was not trained with class balancing.
 
